@@ -16,24 +16,64 @@ public class ch3notesstartercode
 {
 public static void main (String [] args)
 {
-
-        Scanner Keyboard = new Scanner(System.in);
+            
+        Scanner keyboard = new Scanner(System.in);
+        int x ;
+        System.out.println("How old are you?");
+        x= keyboard.nextInt();
+        // for extended ifs order is IMPORTANT
+        if(x<55)// this if statment must be resolved as a boolean // if you only have one statement you dont need ot tab but you should do that
+            {
+                System.out.println // all of this is considered one line - dettermined by semi colon 
+                ("you are younger than Mr. hayes, and more likely ot be better looking than him also"); // blujay doesnt like a return
+                // statements below will not print because its going to find the first true statement and then skip everything else 
+            }if (x<20)
+            {
+                if(x>18)
+                {
+                    System.out.println("Your in College");
+                }
+                if(x>13)
+                {
+                    System.out.println("Your in High School");
+                }
+                if(x<10){
+                    System.out.println("What Grade School are you in?");
+                    keyboard.nextLine(); // clears input buffer
+                    String school = keyboard.nextLine();
+                    if (school.equals("Steeple Run") )
+                    {
+                        System.out.println("You are not a star");
+                    }
+                    if(school.equals("Scott"))
+                    {
+                        System.out.println("Go Eagles!!");
+                
+                    }
+                }
+                if(x>0)
+                {
+                    System.out.println("Your Alive!");
+                }
+            }
+           
+        
 /**/
-    String word1 = "apple";
-    String word2 = "cat";
-    String word3 = "dog";
+        String word1 = "apple";
+        String word2 = "cat";
+        String word3 = "dog";
 
-    if(word2.compareTo(word1)<0)//;end a statement BAD BAD simicolen
-    {
-        System.out.println(word2 +" is before " + word1  );
-        System.out.println("and cats are evil" );
-    }//ctrl M - will match brackets
-    else
+        if(word2.compareTo(word1)<0)//;end a statement BAD BAD simicolen
+        {
+            System.out.println(word2 +" is before " + word1  );
+            System.out.println("and cats are evil" );
+        }//ctrl M - will match brackets
+        else
         System.out.println(word1 +" is before " + word2  );
 
-    if(word2.compareTo(word3)<0)
-        System.out.println(word2 +" is before " + word3  );
-/*
+        if(word2.compareTo(word3)<0)
+            System.out.println(word2 +" is before " + word3  );
+    /*
 
       int num = 5, num1 =10, num2 = 4;  // standard hours in a work week
 
@@ -70,7 +110,7 @@ public static void main (String [] args)
 
 /*  */
 
-}// end of main
+    }// end of main
 
 
 }// end of class
