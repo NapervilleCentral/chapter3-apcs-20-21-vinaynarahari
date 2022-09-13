@@ -18,9 +18,9 @@ public static void main (String [] args)
 {
             
         Scanner keyboard = new Scanner(System.in);
-        int x ;
+        int x = 5;
         System.out.println("How old are you?");
-        x= keyboard.nextInt();
+                                                                            ;
         // for extended ifs order is IMPORTANT
         if(x<55)// this if statment must be resolved as a boolean // if you only have one statement you dont need ot tab but you should do that
             {
@@ -58,12 +58,12 @@ public static void main (String [] args)
             }
            
         
-/**/
+/*
         String word1 = "apple";
         String word2 = "cat";
         String word3 = "dog";
 
-        if(word2.compareTo(word1)<0)//;end a statement BAD BAD simicolen
+        if(word2.compareTo(word1)<0)//;end a statement BAD BAD simicolen  // if char comes before you get negative results , if it is equals it gives you 0 and if its greater it gives a number greater than 1
         {
             System.out.println(word2 +" is before " + word1  );
             System.out.println("and cats are evil" );
@@ -74,32 +74,45 @@ public static void main (String [] args)
         if(word2.compareTo(word3)<0)
             System.out.println(word2 +" is before " + word3  );
     /*
-
-      int num = 5, num1 =10, num2 = 4;  // standard hours in a work week
-
-      System.out.print ("Enter a number ");
-      num = Keyboard.nextInt();
-
+       Scanner Keyboard = new Scanner(System.in);
+       
+      
+       System.out.print ("Enter a number ");
+       int num = Keyboard.nextInt();
+    
        System.out.print ("Enter a  second number ");
-       num1 = Keyboard.nextInt();
+       int num1 = Keyboard.nextInt();
 
        System.out.print ("Enter a  third number ");
-       num2 = Keyboard.nextInt();
+       int num2 = Keyboard.nextInt();
+        if (num > num1){
+            if(num> num2){
+                System.out.println(num + " is the highest number!");
+            }
+        }
+        else if (num1 > num){
+            if(num1> num2){
+                System.out.println(num1 + " is the highest number!");
+            }
+        }
+        else(num2 != num1){
+                System.out.println(num2 + " is the highest number!");
+        }
 
-      System.out.println ();
-/*
+      
+*/
 
        boolean a = true, b = false, c = false,d;
-        //System.out.println(a  );
-      // c =(a = true) || (b = true);
-      // System.out.println(a + "-" + b + "-" + c);
+        System.out.println(a  );
+        c =(a = true) || (b = true);
+        System.out.println(a + "-" + b + "-" + c);
 
 
-    //   c = (a = false) || (b = true);
-    //   System.out.println(a + "-" + b+ "-" + c);
-
-//     c =(a = false) && (b = true);
- //    System.out.print(a + "-" + b+ "-" + c);
+       c = (a = false) || (b = true);
+       System.out.println(a + "-" + b+ "-" + c);
+    
+    c =(a = false) && (b = true);
+    System.out.print(a + "-" + b+ "-" + c);
 //
 //     c = (a = true) && (b = false);
 //     System.out.print(a + "-" + b + "-" + c);
@@ -109,7 +122,14 @@ public static void main (String [] args)
 
 
 /*  */
-
+/* misc notes
+    extended if are like or operator
+    nested if is like and operator 
+    compare to is like putting things in order 
+    semi colon ends the statement 
+    ending if statment before bracket is syntatically correct
+    short cirucitng- is when any statement ( only one) you odnt need to ask or need the others
+*/
     }// end of main
 
 
