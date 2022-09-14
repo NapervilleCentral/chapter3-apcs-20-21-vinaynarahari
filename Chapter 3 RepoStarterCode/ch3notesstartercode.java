@@ -16,7 +16,7 @@ public class ch3notesstartercode
 {
 public static void main (String [] args)
 {
-            
+      /*      
         Scanner keyboard = new Scanner(System.in);
         int x = 5;
         System.out.println("How old are you?");
@@ -57,7 +57,7 @@ public static void main (String [] args)
                 }
             }
            
-        
+        */        
 /*
         String word1 = "apple";
         String word2 = "cat";
@@ -101,24 +101,26 @@ public static void main (String [] args)
 
       
 */
+// system below is short circuiting 
+       // boolean a = false, b = false,c = false,d;
+        //System.out.println(a  );
+        //c =(a = true) || (b = true);
+        //System.out.println(a + "-" + b + "-" + c);
 
-       boolean a = true, b = false, c = false,d;
-        System.out.println(a  );
-        c =(a = true) || (b = true);
-        System.out.println(a + "-" + b + "-" + c);
 
-
-       c = (a = false) || (b = true);
-       System.out.println(a + "-" + b+ "-" + c);
-    
-    c =(a = false) && (b = true);
-    System.out.print(a + "-" + b+ "-" + c);
-//
-//     c = (a = true) && (b = false);
-//     System.out.print(a + "-" + b + "-" + c);
-
-//     d =!(a = true) || (b = true) && (c = true);
-//     System.out.print(a + "-" + b + "-" + c+ "-" + d);
+     //  c = (a = false) || (b = true);
+       // System.out.println(a + "-" + b+ "-" + c);
+    // basically && makes it so that all statements have to be true wheras || makes it so that only one of the statements have to be true
+    //c =(a = false) && (b = true);
+    //System.out.println(a + "-" + b+ "-" + c);
+   //  c = (a = true) && (b = false);
+    // System.out.println(a + "-" + b + "-" + c);
+    // not is done first and then the rest happens (order ! , || , &&)
+    /* code below explanation
+     * (does not - true = false )- basically opposite (true or true = true) and the it will be (false or true which will always be true) - all of them are true as a result
+    */
+    //d =!(a = true) || (b = true) && (c = true);
+    //System.out.println(a + "-" + b + "-" + c+ "-" + d);
 
 
 /*  */
@@ -130,6 +132,17 @@ public static void main (String [] args)
     ending if statment before bracket is syntatically correct
     short cirucitng- is when any statement ( only one) you odnt need to ask or need the others
 */
+   // below is how to do proper float checking 
+    double wallet = 1* .01 + 2 * .05 + 3 * .10 + 4 * .25;
+    final double toleranceLevel = 0.01;
+    if  (Math.abs(wallet - 1.41) < toleranceLevel)
+    {
+        System.out.println("Correct");
+    }else
+    {
+        System.out.println(wallet);
+        System.out.println("Add good?");
+    }
     }// end of main
 
 
