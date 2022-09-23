@@ -13,28 +13,51 @@ public class gradeWriter
       System.out.println("What is your letter grade? ");
       
       String letterGrade = scanner.nextLine();
-      double gradeNum;
+      double gradeNum = 0;
       double gradeNum1;
       if (letterGrade.indexOf("A") == 0){
           gradeNum = 4;
-          System.out.println(gradeNum);
       }else if (letterGrade.indexOf("B") == 0){
-          gradeNum = 4;
-          System.out.println(gradeNum);
+          gradeNum = 3;
       }else if (letterGrade.indexOf("C") == 0){
-          gradeNum = 4;
-          System.out.println(gradeNum);
+          gradeNum = 2;
       }else if (letterGrade.indexOf("D") == 0){
-          gradeNum = 4;
-          System.out.println(gradeNum);
+          gradeNum = 1;
       }else if (letterGrade.indexOf("F") == 0){
-          gradeNum = 4;
+          gradeNum = 0;
+      }
+      
+      if(letterGrade.indexOf("-") == 1){
+          if ( letterGrade.indexOf("-") == 1 && letterGrade.indexOf("F") != 0){
+              gradeNum-=.3;
+          }else{
+              System.out.println(gradeNum);
+          }
+      }
+      if(letterGrade.indexOf("+") == 1){
+          if (letterGrade.indexOf("+") == 1 && letterGrade.indexOf("A") != 0 || letterGrade.indexOf("+") == 1 && letterGrade.indexOf("F") != 0){
+              gradeNum +=.3;
+          }
+          else{
+              System.out.println(gradeNum);
+          }
+      }
+      System.out.println("Your Grade is: " + gradeNum);
+  }
+      
+      /*
+      if (letterGrade.indexOf("+") == 1 && letterGrade.indexOf("A") != 0 || letterGrade.indexOf("+") == 1 && letterGrade.indexOf("F") != 0){
           System.out.println(gradeNum);
       }
-      
-      if (letterGrade.indexOf("+") == 1 && letterGrade.indexOf("A") != 0){
-        
+      if (letterGrade.indexOf("+") == 1){
+          gradeNum+=.3;
       }
-      
-  }
+      if ( letterGrade.indexOf("-") == 1 && letterGrade.indexOf("F") != 0){
+          System.out.println(gradeNum);
+      }
+      if (letterGrade.indexOf("-") == 1){
+          gradeNum-=.3;
+      }
+      */
 }
+
