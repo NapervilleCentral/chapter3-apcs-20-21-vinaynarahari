@@ -1,3 +1,5 @@
+package Labs;
+
 
 /**
  * Write a description of class triangleCheck here.

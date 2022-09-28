@@ -1,3 +1,5 @@
+package Labs;
+
 import java.util.*;
 /**
  * Write a description of class solarSystem here.
