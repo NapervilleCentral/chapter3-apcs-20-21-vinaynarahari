@@ -159,8 +159,40 @@ public class ch3notesstartercode
                    break;
                default:
                    System.out.println("Invalid Choice");
+                   
            }
-    }// end of main
+        /*String s2 = "on your side";
+Consider the following method. The method is intended to print true if the value val raised to the power power 
+is within the tolerance tolerance of the target value target, and false otherwise.
+
+public boolean similar (double val, double power, double target, double tolerance)
+{
+
+  /*missing code*/
+
+    }
+ /* 
+double answer - Math.pow(val,power);
+if (answer - tolerance >= target)
+  System.out.print(true);
+else
+  Syste.out.print(false);
+  
+System.out.print(Math.abs(Math.pow(val,power))) - target < = tolerance;
+  
+double answer = Math.pow(Math.abs(val),power);
+System.out.print(answer - target <= tolerance);
+  
+double answer = Mat.pow(val,power) - target;
+boolean within = answer - tolerance >= 0;
+System.out.print(within);
+  
+System.out.print(Math.abs(Math.pow(val, power) - target) <= tolerance);
+
+Why is option 4 right??????????
+
+ */
+    // end of main
 
 
 }// end of class
