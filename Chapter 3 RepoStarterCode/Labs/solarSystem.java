@@ -17,7 +17,7 @@ public class solarSystem
         System.out.println("Choose a Planet:\nMer -Mercury\nVen -Venus\nMo -Moon\nEa -Earth\nMa - Mars\nJup -Jupiter\nSat - Saturn\nNep - Neptune\nUr - Uranus");
         Scanner planetChoice = new Scanner(System.in);
         String planet = planetChoice.nextLine();
-        double mass = 100/9.798;
+        double mass = weight/9.807;
         double newWeight = 0;
         
         
@@ -32,18 +32,19 @@ public class solarSystem
                 break;
             case"Mo" :
                 newWeight = mass * 1.62;
+                
                 System.out.println("Your mass on the Moon would be " + newWeight);
                 break;
             case"Ea" :
-                newWeight = mass * 9.798;
+                newWeight = mass * 9.807;
                 System.out.println("Your mass on Earth would be " + newWeight);
                 break;
             case"Ma" :
-                newWeight = mass * 3.71;
+                newWeight = mass * 3.721;
                 System.out.println("Your mass on Mars would be " + newWeight);
                 break;
             case"Jup" :
-                newWeight = mass * 24.92;
+                newWeight = mass * 24.72;
                 System.out.println("Your mass on Jupiter would be " + newWeight);
                 break;
             case"Sat" :
@@ -58,9 +59,12 @@ public class solarSystem
                 newWeight = mass * 8.87;
                 System.out.println("Your mass on Uranus would be " + newWeight);
                 break;
-
+            default:
+                System.out.println("Wrong Input!");
             
                 
             }
+            
+            
         }
 }

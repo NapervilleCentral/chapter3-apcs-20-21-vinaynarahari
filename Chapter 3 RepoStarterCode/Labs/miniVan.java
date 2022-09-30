@@ -16,19 +16,20 @@ public class miniVan
         
         String gear = vanSettings.substring(8);
         String lockSet = vanSettings.substring(0,8);
-        
+        // creates boolean values and sets them default to false
         boolean doorLeft = false;
         boolean doorRight= false;
         boolean insideLeft= false;
         boolean insideRight= false;
         boolean outsideLeft= false;
         boolean outsideRight = false;
-        
+        // checks if van is in park
         if(vanSettings.substring(8).equals("P")){
+            // checks if child lock is on
             if(lockSet.charAt(2) == '1'){
                 insideLeft = false;
                 insideRight = false;
-            }else if(lockSet.charAt(2) == '0'){
+            }/*checks if child lock is off and sees if inside doors are activated*/else if(lockSet.charAt(2) == '0'){
                 if(lockSet.charAt(4) == '1'){
                     insideLeft = true;
                 }
@@ -36,10 +37,12 @@ public class miniVan
                     insideRight = true;
                 }
             }
-            if(lockSet.charAt(3) == '0'){
+            //checks if masterlock is activated 
+            if(lockSet.charAt(3) == '0'){ 
                 doorLeft = false;
                 doorRight =true;
             }else if(lockSet.charAt(3) == '1'){
+                // sets values to true if lef tand right door are open and master lokc is acitvated
                 if(lockSet.charAt(0) == '1'){
                     doorLeft = true;
                 }
@@ -47,6 +50,7 @@ public class miniVan
                     doorRight = true;
                 }
             }
+            // statements check outside doors are activated or not
             if(lockSet.charAt(6) == '1'){
                 outsideLeft = true;
             }else{
@@ -66,6 +70,7 @@ public class miniVan
             outsideLeft= false;
             outsideRight = false;
         }
+        // statements below print out if doors are open or not
         if((doorLeft== true|| insideLeft == true ||outsideLeft == true)){
             System.out.println("Left door is open");
         }else{
