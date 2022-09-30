@@ -13,8 +13,10 @@ public class solarSystem
         Scanner scanner = new Scanner(System.in);
         System.out.println("How much do you weigh (in pounds):");
         double weight = scanner.nextDouble();
+        
         System.out.println("Choose a Planet:\nMer -Mercury\nVen -Venus\nMo -Moon\nEa -Earth\nMa - Mars\nJup -Jupiter\nSat - Saturn\nNep - Neptune\nUr - Uranus");
-        String planet = scanner.nextLine();
+        Scanner planetChoice = new Scanner(System.in);
+        String planet = planetChoice.nextLine();
         double mass = 100/9.798;
         double newWeight = 0;
         
