@@ -1,11 +1,12 @@
 package Labs;
-
 import java.util.*;
+import java.text.*;
 /**
- * Write a description of class solarSystem here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * solarSystem
+ * This Program tells you what your weight in different planets is
+ * Variable List: weight, planet, newWeight, mass, choice
  */
 public class solarSystem
 {
@@ -16,55 +17,53 @@ public class solarSystem
         
         System.out.println("Choose a Planet:\nMer -Mercury\nVen -Venus\nMo -Moon\nEa -Earth\nMa - Mars\nJup -Jupiter\nSat - Saturn\nNep - Neptune\nUr - Uranus");
         Scanner planetChoice = new Scanner(System.in);
-        String planet = planetChoice.nextLine();
+        String choice = planetChoice.nextLine();
         double mass = weight/9.807;
-        double newWeight = 0;
+        String planet = " ";
+        double newWeight  = 0;
+        DecimalFormat format = new DecimalFormat("0.##");
         
-        
-        switch(planet){
+        switch(choice){
             case"Mer" :
                 newWeight = mass * 3.7;
-                System.out.println("Your mass on Mercury would be " + newWeight);
+                planet = "Mercury";
                 break;
             case"Ven" :
                 newWeight = mass * 8.87;
-                System.out.println("Your mass on Venus would be " + newWeight);
+                planet = "Venus";
                 break;
             case"Mo" :
                 newWeight = mass * 1.62;
-                
-                System.out.println("Your mass on the Moon would be " + newWeight);
+                planet = "Moon";
                 break;
             case"Ea" :
                 newWeight = mass * 9.807;
-                System.out.println("Your mass on Earth would be " + newWeight);
+                planet = "Earth";
                 break;
             case"Ma" :
                 newWeight = mass * 3.721;
-                System.out.println("Your mass on Mars would be " + newWeight);
+                planet = "Mars";
                 break;
             case"Jup" :
                 newWeight = mass * 24.72;
-                System.out.println("Your mass on Jupiter would be " + newWeight);
+                planet = "Jupiter";
                 break;
             case"Sat" :
                 newWeight = mass * 10.44;
-                System.out.println("Your mass on Saturn would be " + newWeight);
+                planet = "Saturn";
                 break;
             case"Nep" :
                 newWeight = mass * 11.15;
-                System.out.println("Your mass on Neptune would be " + newWeight);
+                planet = "Neptune";
                 break;
             case"Ur" :
                 newWeight = mass * 8.87;
-                System.out.println("Your mass on Uranus would be " + newWeight);
+                planet = "Uranus";
                 break;
             default:
                 System.out.println("Wrong Input!");
-            
-                
             }
-            
+            System.out.println("Your Weight in " + planet +"is " + format.format(newWeight)); 
             
         }
 }

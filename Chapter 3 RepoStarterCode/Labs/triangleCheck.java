@@ -2,10 +2,11 @@ package Labs;
 import java.util.*;
 
 /**
- * Write a description of class triangleCheck here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * triangleCheck 
+ * Program reads sides or angles and determines if it makes a triangle or not
+ * Variable List: triType, angle1,angle2,angle3,side1,side2,side3
  */
 public class triangleCheck
 {
@@ -25,8 +26,7 @@ public class triangleCheck
             if(180 == (angle1+angle2+angle3)){
                 // checks to see if there any negative angles or if any angle is 0 
                 if(angle1 > 0 && angle2 > 0 && angle3 > 0){
-                    /* if statements below checks to see if angles are 90 or equal or if 
-                     * they are just equal to 180 for their respecitve outputs*/
+            /* if statements below checks to see if angles are equal to 90, have equal angles, or if any two angles are the same to see if they are equilateral,isosceles, or right triangle*/
                     if(angle1 == 90||angle2 == 90||angle3 == 90){
                         System.out.println("Right Triangle");
                     }if (angle1==angle2 && angle2==angle3){
@@ -42,7 +42,7 @@ public class triangleCheck
             }else{
                 System.out.println("Not a Triangle");
             }
-            // if statemnt below checks to see if input is side
+            // if statements below checks to see if input is side
         }if(triType.indexOf("S") == 0){
         
             System.out.println("Enter First Side: ");
@@ -51,7 +51,7 @@ public class triangleCheck
             int side2 = scanner.nextInt();
             System.out.println("Enter Third Side: ");
             int side3 = scanner.nextInt();
-            
+            // sees if the sides entered produces a triangle and also checks to see if the sides entered produce an equilateral,isosceles, or a right triangle 
             if(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1){
                 if(side1 == side2 || side2 == side3){
                     System.out.println("Isoceles Triangle");

@@ -2,10 +2,11 @@ package Labs;
 
 import java.util.*;
 /**
- * Write a description of class progressiveTax here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * progressiveTax
+ * Prints the tax levels at different incomes
+ * Variable List: preTax , taxAmount
  */
 public class progressiveTax
 {

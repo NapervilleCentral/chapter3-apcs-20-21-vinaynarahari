@@ -2,10 +2,11 @@ package Labs;
 import java.util.*;
 
 /**
- * Write a description of class MiniVan here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * miniVan
+ * This Program reads inputs and tells you whether or not the left or right door is open or not
+ * Variable List: gear, lockSet, doorLeft, doorRight, insideLeft, insideRight, outsideLeft,vanSettings
  */
 public class miniVan
 {
@@ -40,27 +41,25 @@ public class miniVan
             //checks if masterlock is activated 
             if(lockSet.charAt(3) == '0'){ 
                 doorLeft = false;
-                doorRight =true;
+                doorRight =false;
+                outsideLeft=false;
+                outsideRight = false;
             }else if(lockSet.charAt(3) == '1'){
-                // sets values to true if lef tand right door are open and master lokc is acitvated
+                // sets values to true if left and right door are open and master lock is acitvated
                 if(lockSet.charAt(0) == '1'){
                     doorLeft = true;
                 }
                 if(lockSet.charAt(1) == '1'){
                     doorRight = true;
+                }// statements check outside doors are activated or not
+                if(lockSet.charAt(6) == '1'){
+                    outsideLeft = true;
+                }
+                if(lockSet.charAt(7) == '1'){
+                    outsideRight = true;
                 }
             }
-            // statements check outside doors are activated or not
-            if(lockSet.charAt(6) == '1'){
-                outsideLeft = true;
-            }else{
-                outsideLeft = false;
-            }
-            if(lockSet.charAt(7) == '1'){
-                outsideRight = true;
-            }else{
-                outsideRight = true;
-            }
+            
         }
         if(vanSettings.substring(8).equals("R")){
             doorLeft= false;

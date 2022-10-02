@@ -2,10 +2,11 @@ package Labs;
 
 import java.util.*;
 /**
- * Write a description of class gradeWriter here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * gradeWriter
+ * Program converts number grade into letter grade
+ * Variable List: gradeNum, gradeNum1,letterGrade
  */
 public class gradeWriter
 {
