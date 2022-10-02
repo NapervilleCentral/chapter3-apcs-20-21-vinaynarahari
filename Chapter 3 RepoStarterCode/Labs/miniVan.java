@@ -26,6 +26,8 @@ public class miniVan
         boolean outsideRight = false;
         // checks if van is in park
         if(vanSettings.substring(8).equals("P")){
+            // checks to see if there is an invalid input given 
+            
             // checks if child lock is on
             if(lockSet.charAt(2) == '1'){
                 insideLeft = false;
@@ -61,24 +63,17 @@ public class miniVan
             }
             
         }
-        if(vanSettings.substring(8).equals("R")){
-            doorLeft= false;
-            doorRight= false;
-            insideLeft= false;
-            insideRight= false;
-            outsideLeft= false;
-            outsideRight = false;
-        }
-        // statements below print out if doors are open or not
-        if((doorLeft== true|| insideLeft == true ||outsideLeft == true)){
+        if (!lockSet.equals('0') || lockSet.equals('1')){
+            System.out.println("Invalid Input");
+            
+        }else if((doorLeft== true|| insideLeft == true ||outsideLeft == true)){
             System.out.println("Left door is open");
-        }else{
-            System.out.println("Left door is closed");
-        }
-        if((doorRight== true|| insideRight == true ||outsideRight == true)){
+        }else if((doorRight== true|| insideRight == true ||outsideRight == true)){
             System.out.println("Right door is open");
         }else{
+            System.out.println("Left door is closed");
             System.out.println("Right door is closed");
         }
+        
     }
 }
