@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=gradeWriter
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ gradeWriter\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Vinay\ Narahari\r\n\ 9/30/22\r\n\ gradeWriter\r\n\ Program\ converts\ number\ grade\ into\ letter\ grade\r\n\ Variable\ List\:\ gradeNum,\ gradeNum1,letterGrade\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2
