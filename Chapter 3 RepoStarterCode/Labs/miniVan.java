@@ -61,9 +61,6 @@ public class miniVan
                 outsideRight = false;
             }
             
-        }else{
-            System.out.println("Left door is closed");
-            System.out.println("Right door is closed");
         }
         if((doorLeft== true|| insideLeft == true ||outsideLeft == true)){
             System.out.println("Left door is open");
