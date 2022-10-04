@@ -17,7 +17,7 @@ public class progressiveTax
         double taxAmount = 0;
         /*find progressive tax for each price range through 
            taking the progressive tax at each level and adding that
-           with the progressive tax at the pervious level*/
+           with the progressive tax at the pervious levels*/
     
         if( 50000>= preTax){
             taxAmount = preTax * .01;
