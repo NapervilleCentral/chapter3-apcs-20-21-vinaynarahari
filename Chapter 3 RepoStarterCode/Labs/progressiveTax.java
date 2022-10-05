@@ -2,10 +2,11 @@ package Labs;
 
 import java.util.*;
 /**
- * Write a description of class progressiveTax here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * progressiveTax
+ * Prints the tax levels at different incomes
+ * Variable List: preTax , taxAmount
  */
 public class progressiveTax
 {
@@ -14,7 +15,9 @@ public class progressiveTax
         System.out.println("Enter Income");
         double preTax = scanner.nextDouble();
         double taxAmount = 0;
-        // progressive tax for each of the tax brackets and gets the tax amount if it for each range(prints it as well)
+        /*find progressive tax for each price range through 
+           taking the progressive tax at each level and adding that
+           with the progressive tax at the pervious levels*/
     
         if( 50000>= preTax){
             taxAmount = preTax * .01;

@@ -2,10 +2,11 @@ package Labs;
 
 import java.util.*;
 /**
- * Write a description of class gradeWriter here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 9/30/22
+ * gradeWriter
+ * Program converts number grade into letter grade
+ * Variable List: gradeNum, gradeNum1,letterGrade
  */
 public class gradeWriter
 {
@@ -29,6 +30,7 @@ public class gradeWriter
       }else if (letterGrade.indexOf("F") == 0){
           gradeNum =0;
       }else{
+          //checks for invalid input 
           gradeNum = 0;
           System.out.println("Invalid Input!");
       }
@@ -50,9 +52,6 @@ public class gradeWriter
                   }
               }
       }
-          else{
-              System.out.println(gradeNum);
-          }
       // prints grade 
       System.out.println("Your Grade is: " + gradeNum);
   }
