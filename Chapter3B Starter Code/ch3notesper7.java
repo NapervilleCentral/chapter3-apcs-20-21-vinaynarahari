@@ -172,7 +172,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 */
 
 //_______________________basic for and scope of i________________________
-/* */
+/* 
         //1A ini - only happens once // you can have as many variables as oyu want but they need to be the same data type
         //1 middle - conidition that gives you either a true or false
         //2 body -exe
@@ -180,16 +180,17 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         // ini            test     3inc
     //for(int i = 0 , j =10; i<j && j>0 ;i++ , j-- )// for( ; ; ) is a valid loop
     int i = 0 , j =10;
-     for( ; ;i++ , j-- )
+     for( ; i<j && j>0;i++ , j-- ) /// if you see the ++i or something outside for loop (here) it woud not do something 
     {
         int k = 5;
         //2
-        System.out.print("Hi" + i + "\n");
+        //   ++i or --i increments first in output or when you use it in an algorithm 
+        System.out.print("Hi" + ++i + "," + j-- +  "\n");
 
     }
     // scope of i is only within the loop. 
     //System.out.print("After the Loop" + i + "\n");
-
+*/
 /*
 
 
@@ -214,10 +215,12 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         test = Keyboard.nextInt();
 
     }
-
-
-
-/*  int i =0;//#1
+/**
+ * 
+ */
+/**/
+// for loop is better at counting whereas while loops are really good at condition - keep calculating something 
+  int i =0;//#1
 
         while (i<10)//#2
         {
@@ -228,8 +231,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
 
 
-
-/*  */
+  /**/
 
    }// end of main
 

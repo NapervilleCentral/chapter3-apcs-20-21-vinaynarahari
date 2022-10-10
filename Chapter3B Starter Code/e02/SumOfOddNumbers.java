@@ -8,14 +8,17 @@ public class SumOfOddNumbers
    {
       Scanner in = new Scanner(System.in);
       // Get the inputs
+      int a = in.nextInt();
+      int b = in.nextInt();
+      int totsum  = 0 ;
+      
+      for (int sum = a; sum >= a && b>= sum;  sum++){
+          
+          if (sum % 2 == 1){
+              totsum +=sum;
+            }
+      }
+      System.out.println("Sum of all odd numbers between a and b is:" + " " + totsum);
 
-      // The sum of odd numbers between a and b
-
-      //5 10 (5 7 9) add the odds
-
-         // Only add number if it is odd
-
-      // Output the result
-      System.out.println("The sum is " + sum + ".");
    }
 }
