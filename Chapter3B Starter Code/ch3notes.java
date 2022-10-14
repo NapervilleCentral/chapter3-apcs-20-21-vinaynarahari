@@ -33,12 +33,14 @@ public class ch3notes
        Week sad = Week.Monday;
        Week happy = Week.Friday;
        System.out.println(sad.compareTo( happy ) );
-       
+       // not the same as allist enum is a data type 
        String[] people = {"Deepa", "Trevor", "Murugan", "Emy",
                           "Thomas", "Charlie",
                           "heinz doofenshmirtz", "Michael",
                           "NoOne", "Bueller","Justin","David"};
                           /*
+
+            // iterator 
        String number;
        int num,total = 0;
        for(int i = 0; i< 5; i++)
@@ -50,7 +52,7 @@ public class ch3notes
        }
        System.out.println(total);
 /*
-
+// iteratoris like a cursor it goes to the begginign of the collection and passes to either nthe next white space(.hasNext()) or to the next line
         System.out.println("You scedule is:");
         // new for loop to use with iterators
         //foreach loop
@@ -91,17 +93,17 @@ public class ch3notes
         k++;
         System.out.println(k + "\t" + j);
     }
-
+// this (\\) and this (/) are the same thing 
     System.out.println("After the loop \n k= " +k +"\tj= " +j);
 
-
+// abolsute path whne oyu get the exact location of the folder exe:C:\Users\vnarahari\Desktop\Narahari APCS (new)\chapter3-apcs-20-21-vinaynarahari\Chapter3B Starter Code
 /**/
     // Scanner file i/o defaults at the space
     // review file dir    
     Scanner scanFile = new Scanner(new File("speeches\\people.txt"));
     Scanner scanFile2 = new Scanner(new File("data/Debate12016.txt"));
     String data = scanFile.nextLine();
-    //*/
+    //*
     String name, address, phone;
 
     while(scanFile.hasNext())
@@ -113,15 +115,20 @@ public class ch3notes
         System.out.println(name + "---"+ phone);
 
     }
-    /*
+    
     String word;
+    int counter = 0;
      while(scanFile2.hasNext())
     {
-        word = scanFile2.next();
-        System.out.println(word);
+        word = scanFile2.next().substring(0,scanFile2.next().length()-3);
+        
+        if(word.equalsIgnoreCase("Trump")){
+            counter++ ;
+            
+        }
 
     }
-
+    System.out.println(counter);
 
 
 
