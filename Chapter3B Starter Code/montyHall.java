@@ -1,9 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class montyHall here.
+ * Creates a simulation for the monty hall problem
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * Variables x,y,c,h,g,j
  */
 public class montyHall
 {
