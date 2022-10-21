@@ -12,15 +12,20 @@ public class palindrome
        System.out.println("Enter The Word: ");
        String word = scanner.nextLine();
        int y = 0;
+       String newword = " ";
+       // word.indexOf(" ");
        for(int x = 0; (word.length()-1) > x; x++){
-           if(word.charAt(" ") != word.length()){
-               
+           newword = word;
+           if(newword.indexOf(" ") == x){
+               newword = word.substring(0,x) + word.substring(x+1, word.length());
            }
-           if(word.charAt(x)==word.charAt(word.length()-(x+1))){
+           
+
+           {
                y++;
            }
        }
-       if(y == (word.length()-1)){
+       if(y == (newword.length()-1)){
            System.out.println("Word is a Palindrome!");
        }else
            System.out.println("Word is not a Palindrome!");
