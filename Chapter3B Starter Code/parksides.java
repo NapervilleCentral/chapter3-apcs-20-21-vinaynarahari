@@ -11,8 +11,14 @@ public class parksides
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Enter the size: ");
-        final int x = scanner.nextInt();
+        int rows = scanner.nextInt();
         System.out.println("Enter the Seed: ");
+        int start = scanner.nextInt();
+        
+        for(int x = 1; rows>=x; x++){
+            
+            
+        }
         
         
     }

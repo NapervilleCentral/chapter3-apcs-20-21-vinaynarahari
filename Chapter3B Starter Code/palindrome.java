@@ -16,12 +16,15 @@ public class palindrome
        // word.indexOf(" ");
        for(int x = 0; (word.length()-1) > x; x++){
            newword = word;
+           // if statement removes the spaces in the user entered phrase
            if(newword.indexOf(" ") == x){
                newword = word.substring(0,x) + word.substring(x+1, word.length());
            }
            
-
-           {
+            /* if statement checks to see if the char at index x is the same
+               as the char at the index of the length -1 (full length of the
+               word) - x */
+           if(newword.charAt(x) == newword.charAt((newword.length()-1) - x)){
                y++;
            }
        }
