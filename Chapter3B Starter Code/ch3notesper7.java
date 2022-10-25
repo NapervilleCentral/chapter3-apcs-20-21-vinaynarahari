@@ -23,11 +23,11 @@ public class ch3notesper7
 
    public static void main (String [] args) throws IOException // required for File IO
    {
-	   //enum whatever{1,3,5,7,9}must be declared outside of main
+       //enum whatever{1,3,5,7,9}must be declared outside of main
        Scanner Keyboard = new Scanner(System.in);
        DecimalFormat fmt = new DecimalFormat ("0.###");
        Integer two = 2;
-
+/*
        Grades mygrade = Grades.F;
        Grades yourgrade = Grades.A;
 
@@ -50,12 +50,12 @@ public class ch3notesper7
      int num, total = 0;
      for(int i = 0; i< 5;i++)
      {
-     	System.out.print("Enter a number");
-     	number = Keyboard.next();// "5"
-     	num = Integer.parseInt(number);//converts "5" to digit 5
-     	total += num;
- 	 }
- 	 System.out.println(total);
+         System.out.print("Enter a number");
+         number = Keyboard.next();// "5"
+         num = Integer.parseInt(number);//converts "5" to digit 5
+         total += num;
+      }
+      System.out.println(total);
 
 
     /*
@@ -131,7 +131,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         //System.out.println(word);
 
         if (word.equals("ISIS"))
-        	total ++;
+            total ++;
 
     }
     System.out.println("ISIS was said "+total);
@@ -169,24 +169,28 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
 
     }//end of while
-
+*/
 
 //_______________________basic for and scope of i________________________
-/*
-        //ini
-        //middle
-        //body
-        //last
-        // ini          test     inc
-    for(int i = 0 ; i<10 ;i++  )// for( ; ; ) is a valid loop
+/* 
+        //1A ini - only happens once // you can have as many variables as oyu want but they need to be the same data type
+        //1 middle - conidition that gives you either a true or false
+        //2 body -exe
+        //3 last    again like the initialization you can have multiple operaters here
+        // ini            test     3inc
+    //for(int i = 0 , j =10; i<j && j>0 ;i++ , j-- )// for( ; ; ) is a valid loop
+    int i = 0 , j =10;
+     for( ; i<j && j>0;i++ , j-- ) /// if you see the ++i or something outside for loop (here) it woud not do something 
     {
-
-        System.out.print("Hi" + i + "\n");
+        int k = 5;
+        //2
+        //   ++i or --i increments first in output or when you use it in an algorithm 
+        System.out.print("Hi" + ++i + "," + j-- +  "\n");
 
     }
-
+    // scope of i is only within the loop. 
     //System.out.print("After the Loop" + i + "\n");
-
+*/
 /*
 
 
@@ -211,10 +215,12 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         test = Keyboard.nextInt();
 
     }
-
-
-
-/*  int i =0;//#1
+/**
+ * 
+ */
+/**/
+// for loop is better at counting whereas while loops are really good at condition - keep calculating something 
+  int i =0;//#1
 
         while (i<10)//#2
         {
@@ -225,8 +231,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
 
 
-
-/*  */
+  /**/
 
    }// end of main
 
