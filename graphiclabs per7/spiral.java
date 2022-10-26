@@ -12,14 +12,14 @@ public class spiral
     {
         
         StandardPen pen = new StandardPen();
-        
-        for(int x=0 , y =1; 10>=x; x++ ,y++)
+        pen.up();
+        for(int x=0; 10>=x; x++)
         {
             pen.move(10+(5*x));
             pen.turn(90);
             
             pen.setWidth(5);
-            
+            pen.down();
         }
         
         
