@@ -32,11 +32,12 @@ public class parksides
         
         for(int k =rows-1, i =0 ; k!=0; k--){
             System.out.println();
-            while(k<rows){
+            int z  = k;
+            while(z<rows){
                 System.out.print(" ");
-                int z = k;
                 z++;
             }
+            start= holder;
             holder = holder + i;
             if (holder>9){
                 holder = start; 
