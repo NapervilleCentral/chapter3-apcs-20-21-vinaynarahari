@@ -19,32 +19,27 @@ public class parksides
         int holder = start;
         String empty = "";
         
-        for(int x =rows, y =0;x >= 0;x--, y++){
+        for(int x = rows, y =0, count = 0 ; x>=0 ; y++, x--,count++){
             
             holder = holder + y;
             if (holder>9){
                 holder = start; 
                 
             }
-            System.out.print(holder + " ");
             
-        }
-        
-        for(int k =rows-1, i =0 ; k!=0; k--){
-            System.out.println();
-            int z  = k;
-            while(z<rows){
+            
+            if(count == rows){
+                System.out.println();
+            }
+            
+    
+            while(x<rows){
                 System.out.print(" ");
-                z++;
+                x++;
             }
-            start= holder;
-            holder = holder + i;
-            if (holder>9){
-                holder = start; 
-                
-            }
-            System.out.print(holder + " ");
         }
+
+        
         /*
            holder = holder + y;
             if (holder>9){

@@ -13,7 +13,7 @@ public class spiral
         
         StandardPen pen = new StandardPen();
         pen.up();
-        for(int x=0; 10>=x; x++)
+        for(int x=0; 10000>=x; x++)
         {
             pen.move(10+(5*x));
             pen.turn(90);

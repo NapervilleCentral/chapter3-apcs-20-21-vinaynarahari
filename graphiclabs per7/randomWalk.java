@@ -13,7 +13,7 @@ public class randomWalk
         Random random = new Random();
         StandardPen pen = new StandardPen();
         
-        for ( int x = 0; x<=10000; x++){
+        for ( int x = 0; x<=40000; x++){
             int choice = random.nextInt(4);
             pen.move(10);
             pen.turn((choice *90) + 90);
