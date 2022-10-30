@@ -20,12 +20,10 @@ public class parksides
         
         for(int x = rows,count = 2 ; x>=0 ; x--,count++){
             
-            //System.out.println("**"+t+"**");
-            
             System.out.println();
             int z =x;
             while(z<rows){
-                System.out.print(" ");
+                System.out.print("  ");
                 z++;
             }
             int t = x-1;
@@ -46,10 +44,8 @@ public class parksides
                 }
             
                 
-                System.out.print( holder);
-                System.out.print(" ");
+                System.out.print(" " + holder);
             }
-            //holder++;
             holder = initrowvalue + count;
             if(holder>9){
                     holder = holder-9;
@@ -58,19 +54,5 @@ public class parksides
             
         }
 
-        
-        /*
-           holder = holder + y;
-            if (holder>9){
-                holder = start; 
-                
-            }
-            System.out.print(holder + " ");
-            newrow = newrow-z;
-            while(newrow<rows){
-                empty.concat(" ");
-                x=1;
-            }
-         */ 
     }
 }
