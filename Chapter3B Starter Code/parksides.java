@@ -46,7 +46,8 @@ public class parksides
                 }
             
                 
-                System.out.print( holder );
+                System.out.print( holder);
+                System.out.print(" ");
             }
             //holder++;
             holder = initrowvalue + count;
