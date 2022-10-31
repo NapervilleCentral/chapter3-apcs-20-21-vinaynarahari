@@ -40,7 +40,7 @@ public class parksides
                     tempvar++;
                 }
                 if(holder>9){
-                    holder = holder-9;
+                    holder = holder%9;
                 }
             
                 
