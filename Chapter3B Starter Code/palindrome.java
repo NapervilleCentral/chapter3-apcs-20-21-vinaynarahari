@@ -1,9 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class palindrome here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 10/31/22
+ * This Program checks to see if user input is a palindrome or not
+ *Variable List: y, x, word, newword
  */
 public class palindrome
 {
@@ -13,7 +13,7 @@ public class palindrome
        String word = scanner.nextLine();
        int y = 0;
        String newword = " ";
-       // word.indexOf(" ");
+       
        for(int x = 0; (word.length()-1) > x; x++){
            newword = word;
            // if statement removes the spaces in the user entered phrase
@@ -28,6 +28,7 @@ public class palindrome
                y++;
            }
        }
+       // if statement checks to see if the counter y is equal to the length of the user entry
        if(y == (newword.length()-1)){
            System.out.println("Word is a Palindrome!");
        }else

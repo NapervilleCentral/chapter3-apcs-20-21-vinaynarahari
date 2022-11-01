@@ -1,10 +1,10 @@
 import java.io.*;
 import java.util.*;
 /**
- * Write a description of class fileRead here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Vinay Narahari
+ * 10/31/22
+ * This Program analyzes speeches to see how the length, average length, and how many times some specifc words were mentioned
+ *Variable List: gov,econ,freed,avgLen,wordCount,len
  */
 public class fileRead
 {
@@ -13,9 +13,13 @@ public class fileRead
         
         Scanner scanner = new Scanner(System.in);
         Scanner fileScan = new Scanner(new File("speeches//obamatakebackamerica.txt"));
-        int gov =0, econ = 0, freed = 0, len = 0, avgLen = 0, wordCount= 0;
+        /* other speeches used were George Washingtons Inaugrual Speech, the JFK Speech, the MLK I have a Dream speech,the Thomas Jefferson Speech , the obama inaugural speech, and the 
+         *  obama take back america speech
+         */
+        int len = 0, avgLen = 0, freed =0 , gov =0, econ =0, wordCount =0;
 
         String word = " " ;
+        // while loop goes through the entire speech and checks the length and how many times a specific word was said
         while(fileScan.hasNext()){
             word = fileScan.next();
             if(word.equalsIgnoreCase("Government")){
@@ -30,12 +34,6 @@ public class fileRead
             len+= word.length();
             wordCount++;
         }
-        avgLen = len/wordCount;
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println("len " +len + " /avglen " + avgLen );
-        System.out.println("gov " + gov + " /econ " + econ + " /freed " + freed);
         
         /* Results:
          * George Washingtons Inaugrual Speech:
