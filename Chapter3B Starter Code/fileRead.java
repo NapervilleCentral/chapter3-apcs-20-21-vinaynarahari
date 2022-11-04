@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 /**
  * Vinay Narahari
- * 10/31/22
- * This Program analyzes speeches to see how the length, average length, and how many times some specifc words were mentioned
+ *10/31/22
+ *This Program analyzes speeches to see how the length, average length, and how many times some specifc words were mentioned
  *Variable List: gov,econ,freed,avgLen,wordCount,len
  */
 public class fileRead
@@ -54,7 +54,8 @@ public class fileRead
          * obama take back america
          *      average length: 4 ; total words: 13949
          *      government was mentioned 8 times ; economy was mentioned once ; freedom was mentioned once
-           Reflection:
+          
+         *      Reflection:
            
            Looking through the data I collected, I found it interesting how George Washingtons Inaugural speech didn't contain the word "freedom" as America was a new country at the time.
            Another thing I found interest was how in the older speech there was a higher average word length ( as seen in washington's speech) yet there was a lower word count compared to

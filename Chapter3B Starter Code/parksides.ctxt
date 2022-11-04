@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=parksides
-comment0.text=\r\n\ Vinay\ Narahari\r\n\ 10/31/22\r\n\ This\ Program\ produces\ parksides\ other\ triangle\r\nVariable\ List\:\ gov,econ,freed,avgLen,wordCount,len\r\n
+comment0.text=\r\n\ Vinay\ Narahari\r\n\ 10/31/22\r\n\ This\ Program\ produces\ parksides\ other\ triangle\r\nVariable\ List\:\ rows,\ start\ ,\ holder,\ z,\ x,\ x2,y,\ initRowValue,\ counter\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2
